@@ -1,0 +1,16 @@
+{
+    "1": {
+        "name": "Tesla Model 3",
+        "type": "Electric Car",
+        "price": "39999.99",
+        "image": "https://www.tesla.com/tesla_theme/assets/img/_vehicle_redesign/Model3_Main.jpg",
+        "id": 1
+    },
+    "2": {
+        "name": "Toyota Camry",
+        "type": "Sedan",
+        "price": "25999.99",
+        "image": "https://toyotaassets.scene7.com/is/image/toyota/CAM_MY21_0003_V001?wid=1200&fmt=jpg&fit=crop",
+        "id": 2
+    }
+}
