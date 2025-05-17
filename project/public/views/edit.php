@@ -8,7 +8,7 @@ $id = isset($_GET['id']) ? (int) $_GET['id'] : 0;
 $vehicle = $vehicleManager->getVehicle($id);
 
 if (!$vehicle) {
-    header('Location: index.php');
+    header('Location: ../index.php');
     exit;
 }
 

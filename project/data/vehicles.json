@@ -3,14 +3,14 @@
         "name": "Tesla Model 3",
         "type": "Electric Car",
         "price": "39999.99",
-        "image": "https://www.tesla.com/tesla_theme/assets/img/_vehicle_redesign/Model3_Main.jpg",
+        "image": "https://media.sketchfab.com/models/fac3d813620f4c4a95da1933c2592069/thumbnails/1f6127f4aadd489c8cf94a080cedf9cf/6a2cb6cb441e42989417b2aa8aad6d48.jpeg",
         "id": 1
     },
     "2": {
         "name": "Toyota Camry",
         "type": "Sedan",
         "price": "25999.99",
-        "image": "https://toyotaassets.scene7.com/is/image/toyota/CAM_MY21_0003_V001?wid=1200&fmt=jpg&fit=crop",
+        "image": "https://car-images.bauersecure.com/wp-images/2219/toyota_hybrids_01.jpg",
         "id": 2
     }
 }

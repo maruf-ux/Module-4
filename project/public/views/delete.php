@@ -1,12 +1,12 @@
 <?php
-require_once '../app/Classes/VehicleManager.php';
-$vehicleManager = new VehicleManager('../data/vehicles.json');
+require_once '../../app/Classes/VehicleManager.php';
+$vehicleManager = new VehicleManager('../../data/vehicles.json');
 
 $id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
 $vehicle = $vehicleManager->getVehicle($id);
 
 if (!$vehicle) {
-    header('Location: index.php');
+    header('Location: public/index.php');
     exit;
 }
 
@@ -15,14 +15,14 @@ $error = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['confirm']) && $_POST['confirm'] === 'yes') {
     if ($vehicleManager->deleteVehicle($id)) {
-        header('Location: index.php');
+        header('Location: ../index.php');
         exit;
     } else {
         $error = "Failed to delete vehicle. Please try again.";
     }
 }
 
-include 'views/header.php';
+include 'header.php';
 ?>
 
 <h2>Delete Vehicle</h2>
@@ -53,7 +53,7 @@ include 'views/header.php';
 <form method="post" action="delete.php?id=<?php echo $id; ?>">
     <input type="hidden" name="confirm" value="yes">
     <button type="submit" class="btn btn-danger">Confirm Delete</button>
-    <a href="index.php" class="btn btn-secondary">Cancel</a>
+    <a href="../index.php" class="btn btn-secondary">Cancel</a>
 </form>
 
-<?php include 'views/footer.php'; ?>
+<?php include 'footer.php'; ?>
